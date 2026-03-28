@@ -21,7 +21,7 @@ app.post("/contact", async (req, res) => {
   try {
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "contact@subseatronics.com",
+      to: "subseatronics@icloud.com",
       subject: subject || "Nouveau Message",
       html: `
         <p><b>Name:</b> ${name}</p>

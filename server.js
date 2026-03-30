@@ -20,9 +20,8 @@ app.post("/contact", async (req, res) => {
 
   try {
     await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "darrendarmath@gmail.com",
-      reply_to: "darren.mathis974@gmail.com",
+      from: "contact@demo-restaurant.eu",
+      to: "darren.mathis974@gmail.com",
       subject: subject || "Nouveau Message",
       html: `
         <p><b>Name:</b> ${name}</p>
